@@ -1,9 +1,4 @@
-<template>
-                <p>Message is: {{ message }}</p>
-                <input v-model="message" placeholder="edit me" />
-</template>
-  
-  <script>
+<script>
   export default {
     data() {
       return {
@@ -22,6 +17,14 @@
   }
   };
   </script>
+
+
+<template>
+                <p>Message is: {{ message }}</p>
+                <input v-model="message" placeholder="edit me" />
+</template>
+  
+  
   
   <style scoped>
   span {
