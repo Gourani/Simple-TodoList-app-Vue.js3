@@ -1,35 +1,55 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+
+
+:root {
+	--primary: #EA40A4;
+	--business: #3A82EE;
+	--personal: var(--primary);
+	--light: #EEE;
+	--grey: #888;
+	--dark: #313154;
+	--danger: #ff5b57;
+  --success:#28a745;
+	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+	--business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+	--personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+
+
+*{
+  margin:0;
+  padding: 0;
+  font-size: 23px;
+  letter-spacing: 1pt;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: capitalize;
+}
+input:focus{
+  outline: none;
+}
+body {
+  background-color: #f2f2f2;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+#app{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.card{
+  padding: 10px 25px ;
+  margin: 10px 0px;
+  border: 0;
+  width: 500px;
+  box-shadow: 3px 3px 2px 1px rgba(147, 147, 147, 0.2);
+  border-radius: 10px;
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }

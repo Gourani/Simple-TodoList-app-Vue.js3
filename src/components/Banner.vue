@@ -20,15 +20,30 @@
 
 
 <template>
-                <p>Message is: {{ message }}</p>
-                <input v-model="message" placeholder="edit me" />
+          <div>
+            <h1>What's Up, <input v-model="message" placeholder="edit me" /></h1>
+          </div>
+
+                
 </template>
   
   
   
   <style scoped>
-  span {
-    color: blue;
+  h1{
+    font-weight:bold;
   }
+ input{
+  font-weight:bold;
+  background-color: #f2f2f2;
+  border:none;
+  text-transform: capitalize;
+}
+div{
+  margin-bottom: 20px;
+}
+input:focus{
+  outline: none;
+}
   </style>
   
